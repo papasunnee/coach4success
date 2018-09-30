@@ -6,6 +6,9 @@ import MyContainer from "../components/MyContainer";
 import ServiceIndex from "../components/Services";
 import Service from "../components/Services/Service";
 import Additional from "../components/Services/Additional";
+import HowItWorks from "../components/HowItWorks";
+import BrowseCareerCoaches from "../components/BrowseCareerCoaches";
+import Footer from "../components/Footer";
 
 export default class Index extends Component {
   constructor(props) {
@@ -36,28 +39,10 @@ export default class Index extends Component {
           </Col>
           <ServiceIndex serviceList={Additional} />
         </MyContainer>
-        <div
-          style={{
-            height: "300px",
-            width: "100%",
-            backgroundColor: "#E5E5E5"
-          }}
-        >
-          <MyContainer>
-            <div
-              style={{
-                display: "flex",
-                flex: "0 1 auto",
-                padding: "30px auto"
-              }}
-            >
-              <div>Option 1</div>
-              <div>Option 2</div>
-              <div>Option 3</div>
-              <div>Option 4</div>
-            </div>
-          </MyContainer>
-        </div>
+
+        <HowItWorks />
+        <BrowseCareerCoaches />
+        <Footer />
       </Layout>
     );
   }
