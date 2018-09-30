@@ -1,15 +1,20 @@
-import React, { Component } from "react";
-import ServiceList from "./serviceList";
 import { Col } from "reactstrap";
+import "./index.scss";
 
-const Services = () => {
-  {
-    ServiceList.map(({ label }) => (
+const Service = ({ serviceList, bgColor = "#272727" }) =>
+  serviceList.map(({ label }) => {
+    return (
       <Col md={3}>
-        <div>{label}</div>
+        <div
+          className="service"
+          style={{
+            backgroundColor: `${bgColor}`
+          }}
+        >
+          {label}
+        </div>
       </Col>
-    ));
-  }
-};
+    );
+  });
 
-export default Services;
+export default Service;
