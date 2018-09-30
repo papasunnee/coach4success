@@ -1,0 +1,24 @@
+.jumbotron {
+  background-image: url("/static/svgs/indexBanner.svg");
+  margin-bottom: 0;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  div {
+    text-align: center;
+    color: #fff;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    span {
+      margin: auto;
+      background-color: #ff5500;
+      padding: 5px 40px;
+      border-radius: 50px;
+    }
+  }
+}

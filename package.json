@@ -1,0 +1,27 @@
+{
+  "name": "coach4success",
+  "version": "1.0.0",
+  "author": "altitudetechnologynig@gmail.com",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "start": "next start -p $PORT",
+    "start-win": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
+    "bv-react-svgloader": "^1.1.0",
+    "cookie": "^0.3.1",
+    "isomorphic-unfetch": "^2.0.0",
+    "jsdom": "^11.8.0",
+    "next": "^6.1.2",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "react": "^16.3.2",
+    "react-apollo": "^2.1.3",
+    "react-dom": "^16.3.2",
+    "reactstrap": "^6.4.0"
+  }
+}
