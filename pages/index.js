@@ -51,10 +51,10 @@ export default class Index extends Component {
                 padding: "30px auto"
               }}
             >
-              <div>Sunday</div>
-              <div>Funmilola</div>
-              <div>Sunday</div>
-              <div>Sunday</div>
+              <div>Option 1</div>
+              <div>Option 2</div>
+              <div>Option 3</div>
+              <div>Option 4</div>
             </div>
           </MyContainer>
         </div>
