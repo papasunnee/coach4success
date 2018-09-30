@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "preexport": "npm run build",
-    "export": "next export",
     "start": "next start -p $PORT",
-    "start-win": "next start"
+    "start-win": "next start",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@zeit/next-sass": "^0.2.0",
