@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(#03a9f4, #004bd6);
+            height: 100vh;
+        }
+
+        h1 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 6em;
+        }
+
+        h1::before {
+            content: attr(data-text);
+            left: 0;
+            top: 0;
+            position: absolute;
+            transform-origin: bottom;
+            transform: rotateX(180deg);
+            line-height: 0.865em;
+            background: linear-gradient(0deg, #fff 0, transparent 80%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 0.5;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 data-text="Reflection">Reflection</h1>
+</body>
+
+</html>

@@ -1,5 +1,12 @@
 .wrapper {
-  background-color: #e5e5e5;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(0%, rgba(229, 229, 229, 1)),
+    color-stop(29%, rgba(237, 237, 237, 1)),
+    color-stop(85%, rgba(255, 255, 255, 1))
+  );
   padding: 10px 0px;
   text-align: center;
 }
