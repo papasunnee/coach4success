@@ -8,7 +8,6 @@ import Service from "../components/Services/Service";
 import Additional from "../components/Services/Additional";
 import HowItWorks from "../components/HowItWorks";
 import BrowseCareerCoaches from "../components/BrowseCareerCoaches";
-import Footer from "../components/Footer";
 
 export default class Index extends Component {
   constructor(props) {
@@ -24,7 +23,17 @@ export default class Index extends Component {
           <Col md={6}>
             <Lorem paragraph={3} />
           </Col>
-
+          <Col md={12}>
+            <h2
+              style={{
+                textAlign: "center",
+                margin: "40px auto",
+                fontWeight: "bold"
+              }}
+            >
+              Top Services
+            </h2>
+          </Col>
           <ServiceIndex serviceList={Service} bgColor="#FF5500" />
           <Col md={12}>
             <h2
@@ -37,12 +46,11 @@ export default class Index extends Component {
               Additional Coaching Services
             </h2>
           </Col>
-          <ServiceIndex serviceList={Additional} />
+          <ServiceIndex collapsible serviceList={Additional} />
         </MyContainer>
 
         <HowItWorks />
         <BrowseCareerCoaches />
-        <Footer />
       </Layout>
     );
   }

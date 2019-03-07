@@ -7,7 +7,10 @@ import SvgLoader from "bv-react-svgloader";
 
 const Index = () => {
   return (
-    <div className="wrapper">
+    <div
+      className="wrapper"
+      style={{ boxShadow: "inset 0px 3px 9px -2px rgba(0,0,0,0.75)" }}
+    >
       <MyContainer>
         <Col md={12}>
           <h2>How It Works</h2>

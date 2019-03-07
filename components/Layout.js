@@ -1,31 +1,15 @@
-import Link from "next/link";
 import Head from "next/head";
-import "../style/style.scss";
+import Footer from "../components/Footer";
 import Header from "./Header";
+import "../style/style.scss";
 
-export default ({ children, title = "" }) => (
+export default ({ children, title = "Home" }) => (
   <div>
     <Head>
-      <title>{title} :: Coach4Success</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
-        rel="stylesheet"
-      />
+      <title> Coach4Success :: {title} </title>
     </Head>
-    <header>
-      <Header />
-    </header>
-
+    <Header />
     {children}
-
-    <footer>{"I`m here to stay"}</footer>
+    <Footer />
   </div>
 );

@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Link from "next/link";
-import { withRouter } from "next/router";
+import Headroom from "react-headroom";
 import SvgLoader from "bv-react-svgloader";
-
 import links from "../routes";
-
 import {
   Collapse,
   Navbar,
@@ -15,65 +13,49 @@ import {
   NavLink
 } from "reactstrap";
 
-// const links = ;
-
-class NavBar extends Component {
+export default class Example extends React.Component {
   constructor(props) {
     super(props);
-  }
-  state = {
-    isOpen: false
-  };
 
-  toggle = () => {
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  };
-
-  logoname = "logo1";
-  // logoname = this.props.about || "logo1";
-  activeMenu = menu =>
-    menu == this.props.router.pathname ? "menu-active" : "";
+  }
 
   render() {
     return (
-      <Navbar
+      <Headroom
         style={{
-          zIndex: "10",
-          background: "rgba(0,0,0)"
+          webkitTransition: "all 4s ease-in-out"
         }}
-        dark
-        expand="md"
       >
-        <NavbarBrand href="/">
-          {/* <SvgLoader
-            src={`/static/images/${this.logoname}.svg`}
-            className="svg-logo"
-          /> */}
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            {links.map(({ key, href, label }) => (
-              <NavItem key={key}>
-                <Link href={href} prefetch>
-                  <NavLink href={href} className={`${this.activeMenu(href)}`}>
-                    {label}
-                  </NavLink>
-                </Link>
-              </NavItem>
-            ))}
-          </Nav>
-        </Collapse>
-        <style jsx>{`
-          .nav a {
-            color: black !important;
-          }
-        `}</style>
-      </Navbar>
+        <Navbar color="dark" bg-dark expand="md">
+          <NavbarBrand href="/">
+            <SvgLoader src="/static/svgs/logo.svg" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              {links.map(({ key, href, label }) => (
+                <NavItem key={key}>
+                  <Link href={href} prefetch>
+                    <NavLink href={href}>
+                      {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
+                      {label}
+                    </NavLink>
+                  </Link>
+                </NavItem>
+              ))}
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </Headroom>
     );
   }
 }
-
-export default withRouter(NavBar);
