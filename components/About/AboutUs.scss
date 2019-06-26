@@ -1,0 +1,39 @@
+.head-about {
+  background-image: url(/static/about/head.png);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h2 {
+    padding: 0px 0px 20px 25px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.title-about {
+  background-color: #fff;
+  .cow {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .img-about {
+    h3 {
+      font-weight: 600;
+      width: 60%;
+      line-height: 1.5;
+    }
+    img {
+      width: 300px;
+    }
+  }
+  .content-about {
+    width: 40%;
+    p {
+      line-height: 2;
+      padding: 10px 0px 0px 0px;
+    }
+  }
+}
