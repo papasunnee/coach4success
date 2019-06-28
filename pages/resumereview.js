@@ -1,60 +1,17 @@
 import React, { Fragment } from "react";
-import { Col } from "reactstrap";
-import "./index.scss";
+import ResumeReview from "../components/ResumeReview/ResumeReview";
+import Service from "../components/Services/Service";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer/index";
 
-const Service = ({ serviceList = [], bgColor = "#272727" }) => {
-  // console.log(listItems);
+const resumereview = () => {
   return (
     <Fragment>
-      <div className="head-services">
-        <h2>Our Services</h2>
-      </div>
-      <div className="title-services">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </p>
-      </div>
-      <div className="content-service">
-        <div>
-          {serviceList.map(List => {
-            return <div className="label-service">{List.label}</div>;
-          })}
-        </div>
-        <div className="about-service">
-          <h4>Job Search Strategy</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
+      <Navbar />
+      <ResumeReview serviceList={Service} />
+      <Footer />
     </Fragment>
   );
 };
 
-export default Service;
+export default resumereview;

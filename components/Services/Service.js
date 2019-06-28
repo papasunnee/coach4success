@@ -1,5 +1,5 @@
 export default [
-  { href: "/", label: "Resume Review " },
+  { href: "resumereview", label: "Resume Review " },
   { href: "Q&A", label: "30-Minutes Career Q&A  " },
   { href: "Job-Search", label: "Job Search Strategy  " },
   { href: "Interview", label: "Interview Coaching  " },
