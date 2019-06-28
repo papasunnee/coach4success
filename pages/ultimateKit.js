@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
-import ResumeReview from "../components/ResumeReview/ResumeReview";
+import UltimateKit from "../components/UltimateKit/UltimateKit";
 import Service from "../components/Services/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";
 
-const resumereview = () => {
+const ultimateKit = () => {
   return (
     <Fragment>
       <Navbar />
-      <ResumeReview serviceList={Service} />
+      <UltimateKit serviceList={Service} />
       <Footer />
     </Fragment>
   );
 };
 
-export default resumereview;
+export default ultimateKit;

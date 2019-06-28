@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
 import Link from "next/link";
 import { Nav, NavItem, NavLink } from "reactstrap";
-import "./index.scss";
 
-const Service = ({ serviceList = [], bgColor = "#272727" }) => {
+const Negotiation = ({ serviceList = [], bgColor = "#272727" }) => {
   return (
     <Fragment>
       <div className="head-services">
@@ -34,7 +33,6 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
               <NavItem key={key}>
                 <Link href={href} prefetch>
                   <NavLink href={href}>
-                    {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
                     <div className="label-service">{label}</div>
                   </NavLink>
                 </Link>
@@ -44,7 +42,8 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
         </Nav>
 
         <div className="about-service">
-          <h4>Job Search Strategy</h4>
+          <h4>Negotiation Coaching</h4>
+          <img src="static/services/negotiation.png" alt="image here" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -67,4 +66,4 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
   );
 };
 
-export default Service;
+export default Negotiation;

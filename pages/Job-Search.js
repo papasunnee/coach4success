@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
-import ResumeReview from "../components/ResumeReview/ResumeReview";
+import JobSearch from "../components/JobSearch/JobSearch";
 import Service from "../components/Services/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";
 
-const resumereview = () => {
+const jobsearch = () => {
   return (
     <Fragment>
       <Navbar />
-      <ResumeReview serviceList={Service} />
+      <JobSearch serviceList={Service} />
       <Footer />
     </Fragment>
   );
 };
 
-export default resumereview;
+export default jobsearch;

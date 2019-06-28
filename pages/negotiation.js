@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
-import ResumeReview from "../components/ResumeReview/ResumeReview";
+import Negotiation from "../components/Negotiation/Negotiation";
 import Service from "../components/Services/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";
 
-const resumereview = () => {
+const negotiation = () => {
   return (
     <Fragment>
       <Navbar />
-      <ResumeReview serviceList={Service} />
+      <Negotiation serviceList={Service} />
       <Footer />
     </Fragment>
   );
 };
 
-export default resumereview;
+export default negotiation;

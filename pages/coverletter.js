@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
-import ResumeReview from "../components/ResumeReview/ResumeReview";
+import Coverletter from "../components/Coverletter/Coverletter";
 import Service from "../components/Services/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";
 
-const resumereview = () => {
+const coverletter = () => {
   return (
     <Fragment>
       <Navbar />
-      <ResumeReview serviceList={Service} />
+      <Coverletter serviceList={Service} />
       <Footer />
     </Fragment>
   );
 };
 
-export default resumereview;
+export default coverletter;
