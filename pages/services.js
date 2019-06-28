@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Index from "../components/Services/Index";
+import Index from "../components/Services";
 import Service from "../components/Services/Service";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";

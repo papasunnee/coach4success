@@ -3,7 +3,7 @@ import { Col } from "reactstrap";
 import Layout from "../components/Layout";
 import Lorem from "../components/Lorem";
 import MyContainer from "../components/MyContainer";
-import ServiceIndex from "../components/Services/Index";
+import ServiceIndex from "../components/Services";
 import Service from "../components/Services/Service";
 import Additional from "../components/Services/Additional";
 import HowItWorks from "../components/HowItWorks";
