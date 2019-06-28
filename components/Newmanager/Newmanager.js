@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Link from "next/link";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
-const ResumeReview = ({ serviceList = [], bgColor = "#272727" }) => {
+const Newmanager = ({ serviceList = [], bgColor = "#272727" }) => {
   return (
     <Fragment>
       <div className="head-services">
@@ -42,8 +42,8 @@ const ResumeReview = ({ serviceList = [], bgColor = "#272727" }) => {
         </Nav>
 
         <div className="about-service">
-          <h4>Resume Review</h4>
-          <img src="static/services/resume.png" alt="image here" />
+          <h4>“New Manager” Program </h4>
+          <img src="static/services/newmanager.png" alt="image here" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -66,4 +66,4 @@ const ResumeReview = ({ serviceList = [], bgColor = "#272727" }) => {
   );
 };
 
-export default ResumeReview;
+export default Newmanager;
