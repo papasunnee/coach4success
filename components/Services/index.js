@@ -1,14 +1,10 @@
 import React, { Fragment } from "react";
-import Link from "next/link";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import "./index.scss";
 
 const Service = ({ serviceList = [], bgColor = "#272727" }) => {
   return (
     <Fragment>
-      <div className="head-services">
-        <h2>Our Services</h2>
-      </div>
       <div className="title-services">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -32,12 +28,10 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
           <div className="cow">
             {serviceList.map(({ key, href, label }) => (
               <NavItem key={key}>
-                <Link href={href} prefetch>
-                  <NavLink href={href}>
-                    {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
-                    <div className="label-service">{label}</div>
-                  </NavLink>
-                </Link>
+                <NavLink href={href} prefetch>
+                  {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
+                  <div className="label-service">{label}</div>
+                </NavLink>
               </NavItem>
             ))}
           </div>

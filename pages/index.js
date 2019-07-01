@@ -46,7 +46,7 @@ export default class Index extends Component {
               Additional Coaching Services
             </h2>
           </Col>
-          <ServiceIndex collapsible serviceList={Additional} />
+          {/* <ServiceIndex collapsible serviceList={Additional} /> */}
         </MyContainer>
 
         <HowItWorks />

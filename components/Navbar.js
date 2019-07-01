@@ -35,7 +35,7 @@ export default class Example extends React.Component {
           webkitTransition: "all 4s ease-in-out"
         }}
       >
-        <Navbar color="dark" bg-dark expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand href="/">
             <SvgLoader src="/static/svgs/logo.svg" />
           </NavbarBrand>

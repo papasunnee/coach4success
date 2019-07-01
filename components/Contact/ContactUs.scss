@@ -1,7 +1,10 @@
 .head-contact {
   background-image: url(/static/contact/head.png);
-  height: 300px;
+  min-height: 70vh;
   display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
   h2 {

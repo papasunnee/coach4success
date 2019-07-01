@@ -1,6 +1,9 @@
 .head-about {
   background-image: url(/static/about/head.png);
-  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
