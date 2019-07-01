@@ -40,3 +40,21 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .cow {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-about {
+    h3 {
+      width: 100% !important;
+    }
+    img {
+      width: 90% !important;
+    }
+    .content-about {
+      width: 100% !important;
+    }
+  }
+}

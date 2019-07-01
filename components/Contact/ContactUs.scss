@@ -103,3 +103,42 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .title-contact {
+    .logo-contact {
+      display: flex;
+      flex-direction: column;
+    }
+    .img-contact {
+      h3 {
+        width: 100%;
+      }
+      img {
+        width: 90%;
+      }
+    }
+  }
+  .content-contact {
+    width: 100% !important;
+  }
+  .body-contact {
+    .info-contact {
+      display: flex;
+      flex-direction: column;
+      .first-contact {
+        width: 85%;
+      }
+      .second-contact {
+        width: 60%;
+      }
+    }
+  }
+  .contact-section {
+    .form-contact {
+      .send-contact {
+        width: 85%;
+      }
+    }
+  }
+}

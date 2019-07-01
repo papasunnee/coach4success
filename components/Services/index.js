@@ -30,7 +30,9 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
               <NavItem key={key}>
                 <NavLink href={href} prefetch>
                   {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
-                  <div className="label-service">{label}</div>
+                  <div className="label-service">
+                    <div className="label-service">{label}</div>
+                  </div>
                 </NavLink>
               </NavItem>
             ))}

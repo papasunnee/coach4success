@@ -5,6 +5,7 @@ import Lorem from "../components/Lorem";
 import MyContainer from "../components/MyContainer";
 import ServiceIndex from "../components/Services";
 import Service from "../components/Services/Service";
+import Orangeservices from "../components/Orangeservices";
 import Additional from "../components/Services/Additional";
 import HowItWorks from "../components/HowItWorks";
 import BrowseCareerCoaches from "../components/BrowseCareerCoaches";
@@ -34,7 +35,8 @@ export default class Index extends Component {
               Top Services
             </h2>
           </Col>
-          <ServiceIndex serviceList={Service} bgColor="#FF5500" />
+          <Orangeservices serviceList={Service} />
+          {/* <ServiceIndex serviceList={Service} bgColor="#FF5500" /> */}
           <Col md={12}>
             <h2
               style={{
@@ -46,7 +48,7 @@ export default class Index extends Component {
               Additional Coaching Services
             </h2>
           </Col>
-          {/* <ServiceIndex collapsible serviceList={Additional} /> */}
+          <ServiceIndex collapsible serviceList={Additional} />
         </MyContainer>
 
         <HowItWorks />

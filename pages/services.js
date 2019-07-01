@@ -36,7 +36,7 @@ const services = () => {
             font-weight: bold;
             color: #fff;
           }
-        `}
+      `}
       </style>
     </Fragment>
   );
