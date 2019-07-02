@@ -1,13 +1,21 @@
 import React, { Fragment } from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
-const Orangeservices = ({ serviceList = [], bgColor = "#272727" }) => {
+const Blackservices = ({ serviceList = [], bgColor = "#272727" }) => {
   return (
     <Fragment>
-      <div className="first-div" style={{ display: "flex", flexWrap: "wrap" }}>
+      <div
+        className="first-div"
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap"
+        }}
+      >
         {serviceList
           .filter(service => {
-            return service.category.includes("T");
+            return service.category.includes("A");
           })
           .map(({ key, href, label }) => {
             return (
@@ -19,18 +27,20 @@ const Orangeservices = ({ serviceList = [], bgColor = "#272727" }) => {
                 }}
               >
                 <NavLink
+                  className="navlink"
                   href={href}
                   prefetch
                   style={{
                     padding: "40px",
                     borderRadius: "5px",
-                    backgroundColor: "#FF5500"
+                    width: "90%",
+                    backgroundColor: "#272727"
                   }}
                 >
                   <div className="label-service" style={{ display: "flex" }}>
                     <div
-                      className="top-services"
-                      style={{ fontWeight: "bold" }}
+                      className="additional-services"
+                      style={{ fontWeight: "normal", textAlign: "center" }}
                     >
                       {label}
                     </div>
@@ -40,8 +50,22 @@ const Orangeservices = ({ serviceList = [], bgColor = "#272727" }) => {
             );
           })}
       </div>
+      <style>
+        {`
+        @media (max-width: 500px) {
+            .first-div{
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+            }
+            .navlink{
+                width: 50% !important;
+            }
+        }
+      `}
+      </style>
     </Fragment>
   );
 };
 
-export default Orangeservices;
+export default Blackservices;

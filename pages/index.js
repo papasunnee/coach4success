@@ -9,6 +9,7 @@ import Orangeservices from "../components/Orangeservices";
 import Additional from "../components/Services/Additional";
 import HowItWorks from "../components/HowItWorks";
 import BrowseCareerCoaches from "../components/BrowseCareerCoaches";
+import Blackservices from "../components/Blackservices";
 
 export default class Index extends Component {
   constructor(props) {
@@ -48,7 +49,8 @@ export default class Index extends Component {
               Additional Coaching Services
             </h2>
           </Col>
-          <ServiceIndex collapsible serviceList={Additional} />
+          <Blackservices serviceList={Service} />
+          {/* <ServiceIndex collapsible serviceList={Additional} /> */}
         </MyContainer>
 
         <HowItWorks />
