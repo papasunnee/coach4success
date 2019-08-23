@@ -31,7 +31,7 @@ const Coverletter = ({ serviceList = [], bgColor = "#272727" }) => {
           <div className="cow">
             {serviceList.map(({ key, href, label }) => (
               <NavItem key={key}>
-                <Link href={href} prefetch>
+                <Link href={href} >
                   <NavLink href={href}>
                     <div className="label-service">{label}</div>
                   </NavLink>

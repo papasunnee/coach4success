@@ -28,7 +28,7 @@ const Service = ({ serviceList = [], bgColor = "#272727" }) => {
           <div className="cow">
             {serviceList.map(({ key, href, label }) => (
               <NavItem key={key}>
-                <NavLink href={href} prefetch>
+                <NavLink href={href} >
                   {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
                   <div className="label-service">
                     <div className="label-service">{label}</div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import Layout from "../components/Layout";
 import Lorem from "../components/Lorem";
 import MyContainer from "../components/MyContainer";
@@ -18,37 +18,39 @@ export default class Index extends Component {
     return (
       <Layout>
         <MyContainer>
-          <Col md={6}>
-            <Lorem paragraph={3} />
-          </Col>
-          <Col md={6}>
-            <Lorem paragraph={3} />
-          </Col>
-          <Col md={12}>
-            <h2
-              style={{
-                textAlign: "center",
-                margin: "40px auto",
-                fontWeight: "bold"
-              }}
-            >
-              Top Services
-            </h2>
-          </Col>
-          <Orangeservices serviceList={Service} />
-          {/* <ServiceIndex serviceList={Service} bgColor="#FF5500" /> */}
-          <Col md={12}>
-            <h2
-              style={{
-                textAlign: "center",
-                margin: "40px auto",
-                fontWeight: "bold"
-              }}
-            >
-              Additional Coaching Services
-            </h2>
-          </Col>
-          <ServiceIndex collapsible serviceList={Additional} />
+          <Row>
+            <Col md={6}>
+              <Lorem paragraph={3} />
+            </Col>
+            <Col md={6}>
+              <Lorem paragraph={3} />
+            </Col>
+            <Col md={12}>
+              <h2
+                style={{
+                  textAlign: "center",
+                  margin: "40px auto",
+                  fontWeight: "bold"
+                }}
+              >
+                Our Top Services
+              </h2>
+            </Col>
+            <Orangeservices serviceList={Service} />
+            {/* <ServiceIndex serviceList={Service} bgColor="#FF5500" /> */}
+            <Col md={12}>
+              <h2
+                style={{
+                  textAlign: "center",
+                  margin: "40px auto",
+                  fontWeight: "bold"
+                }}
+              >
+                Additional Coaching Services
+              </h2>
+            </Col>
+            <ServiceIndex collapsible serviceList={Additional} />
+          </Row>
         </MyContainer>
 
         <HowItWorks />

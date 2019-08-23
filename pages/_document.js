@@ -2,12 +2,12 @@
 // Event handlers like onClick can't be added to this file
 
 // ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
@@ -15,8 +15,6 @@ class MyDocument extends Document {
       <html>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
           <link
             rel="stylesheet"
             type="text/css"
@@ -33,8 +31,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;

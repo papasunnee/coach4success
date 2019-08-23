@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Headroom from "react-headroom";
-import SvgLoader from "bv-react-svgloader";
 import links from "../routes";
 import {
   Collapse,
@@ -9,53 +8,47 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from "reactstrap";
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
+export default () => {
+  const [state, setState] = useState({ isOpen: false });
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
+  const toggle = () => {
+    setState({
+      isOpen: !state.isOpen
     });
-  }
+  };
 
-  render() {
-    return (
-      <Headroom
-        style={{
-          webkitTransition: "all 4s ease-in-out"
-        }}
-      >
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">
-            <SvgLoader src="/static/svgs/logo.svg" />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              {links.map(({ key, href, label }) => (
-                <NavItem key={key}>
-                  <Link href={href} prefetch>
-                    <NavLink href={href}>
-                      {/* <NavLink href={href} className={`${this.activeMenu(href)}`}> */}
-                      {label}
-                    </NavLink>
-                  </Link>
-                </NavItem>
-              ))}
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </Headroom>
-    );
-  }
-}
+  return (
+    <Headroom
+      style={{
+        webkitTransition: "all 4s ease-in-out",
+        height: "57px"
+      }}
+    >
+      <Navbar color="dark" dark expand="lg">
+        <NavbarBrand href="/">
+          <img
+            className="img-fluid"
+            src="/static/images/logo.png"
+            style={{ maxWidth: "170px" }}
+          />
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            {links.map(({ key, href, label }) => (
+              <NavItem key={key}>
+                <Link href={href}>
+                  <a className={`nav-link`}>{label}</a>
+                  {/* <a className={`nav-link ${this.activeMenu(href)}`}>{label}</a> */}
+                </Link>
+              </NavItem>
+            ))}
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </Headroom>
+  );
+};
