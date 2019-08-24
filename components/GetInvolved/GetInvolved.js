@@ -1,12 +1,17 @@
 import React, { Fragment } from "react";
 import "./GetInvolved.scss";
+import MyContainer from "../MyContainer";
 
 const GetInvolved = () => {
   return (
     <Fragment>
-      <div className="head-contact">
-        <h2>Contact Us</h2>
-      </div>
+      <MyContainer>
+        <div className="head-contact" style={{ height: "1200px" }}>
+          <h3 style={{ fontWeight: "bold" }}>
+            Page Under Construction in Figma
+          </h3>
+        </div>
+      </MyContainer>
     </Fragment>
   );
 };

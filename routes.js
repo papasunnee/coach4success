@@ -1,7 +1,6 @@
 export default [
   { href: "/", label: "HOME" },
   { href: "/about", label: "ABOUT" },
-  { href: "/contact", label: "CONTACT US" },
   { href: "/services", label: "OUR SERVICES" },
   { href: "/get-involved", label: "GET INVOLVED" },
   { href: "/find-coach", label: "FIND A COACH" },

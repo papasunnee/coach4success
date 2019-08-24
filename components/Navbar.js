@@ -24,7 +24,8 @@ export default () => {
     <Headroom
       style={{
         webkitTransition: "all 4s ease-in-out",
-        height: "57px"
+        height: "57px",
+        zIndex: "1000"
       }}
     >
       <Navbar color="dark" dark expand="lg">

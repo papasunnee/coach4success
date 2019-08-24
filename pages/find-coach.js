@@ -1,18 +1,16 @@
 import React, { Fragment } from "react";
-import AboutUs from "../components/About/AboutUs";
+import GetInvolved from "../components/GetInvolved/GetInvolved";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/index";
-import Empty from "../components/Empty";
 
-const about = () => {
+const getinvolved = () => {
   return (
     <Fragment>
       <Navbar />
-      <AboutUs />
-      <Empty />
+      <GetInvolved />
       <Footer />
     </Fragment>
   );
 };
 
-export default about;
+export default getinvolved;

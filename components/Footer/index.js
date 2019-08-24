@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import Link from "next/link";
 import "./index.scss";
 
 import MyContainer from "../MyContainer";
@@ -12,37 +13,39 @@ const Index = () => {
           <img
             src="/static/images/logo-dark.png"
             className="img-fluid"
-            style={{ maxWidth: "220px", marginBottom: "5px" }}
+            style={{ width: "100%", maxWidth: "220px", marginBottom: "5px" }}
           />
           <p style={{ fontSize: "12px" }}>Copyright 2018 Coach4Success</p>
         </Col>
         <Col md={3}>
           <h5>ABOUT Coach4Success</h5>
           <ul>
-            <li>About Us</li>
-            <li>Team</li>
-            <li>Careers</li>
-            <li>FAQs</li>
-            <li>Contact Us</li>
-            <li>Terms of Use</li>
-            <li>Privacy Policy</li>
+            {FooterAbout.map((footerItem, key) => {
+              return (
+                <li key={key}>
+                  <Link href={footerItem.href}>
+                    <a>{footerItem.label}</a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Col>
         <Col md={3}>
-          <h5>Resources</h5>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-            <li>Lorem Ipsum</li>
-          </ul>
+          <h5>POLULAR JOBS</h5>
         </Col>
         <Col md={3}>
           <h5>GET INVOLVED</h5>
           <ul>
-            <li>For Career Coaches</li>
-            <li>Send Feedback About Coach4Success</li>
-            <li>Tell a Friend</li>
+            {GetInvolved.map((involved, key) => {
+              return (
+                <li>
+                  <Link href={involved.href}>
+                    <a>{involved.label}</a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </Col>
       </MyContainer>
@@ -51,3 +54,22 @@ const Index = () => {
 };
 
 export default Index;
+
+const FooterAbout = [
+  { label: "About Us", href: "/about" },
+  { label: "Team", href: "" },
+  { label: "Careers", href: "" },
+  { label: "FAQs", href: "" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Browse Jobs", href: "" },
+  { label: "Browse Companies", href: "" },
+  { label: "Terms of Use", href: "" },
+  { label: "Privacy Policy", href: "" }
+];
+
+const GetInvolved = [
+  { label: "For Employers", href: "" },
+  { label: "For Career Coaches", href: "" },
+  { label: "Send Feedback About Coach4Success", href: "" },
+  { label: "Tell A Friend", href: "" }
+];

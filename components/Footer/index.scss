@@ -7,11 +7,23 @@
 .footer h5 {
   color: #ff5500;
   font-size: 1.1em;
-  text-transform: uppercase;
   font-weight: bold;
 }
 .footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  li {
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color: rgb(170, 170, 170);
+      }
+    }
+  }
 }

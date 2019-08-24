@@ -56,6 +56,7 @@ const Coach = () => {
       <ReactPlayer
         url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
         playing={false}
+        width="100%"
         style={{ maxWidth: "560px" }}
       />
       <p className="my-4" style={{ maxWidth: "560px", lineHeight: 2 }}>
