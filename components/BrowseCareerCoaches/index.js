@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import "./index.scss";
-
+import React from "react";
+import Link from "next/link";
 import MyContainer from "../MyContainer";
 import { Col } from "reactstrap";
-import SvgLoader from "bv-react-svgloader";
+
+import "./index.scss";
 
 const Index = () => {
   return (
@@ -14,7 +14,9 @@ const Index = () => {
           <p>
             Search all of our coaches and find someone you want to work with
           </p>
-          <a href="http://">BROWSE ALL COACHES</a>
+          <Link href="">
+            <a>BROWSE ALL COACHES</a>
+          </Link>
         </Col>
       </MyContainer>
     </div>

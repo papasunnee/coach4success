@@ -6,10 +6,9 @@ import MyContainer from "../components/MyContainer";
 import ServiceIndex from "../components/Services";
 import Service from "../components/Services/Service";
 import Orangeservices from "../components/Orangeservices";
-import Additional from "../components/Services/Additional";
 import HowItWorks from "../components/HowItWorks";
 import BrowseCareerCoaches from "../components/BrowseCareerCoaches";
-import Blackservices from "../components/Blackservices";
+import FindCoach from "../components/FindCoach";
 
 export default class Index extends Component {
   constructor(props) {
@@ -37,8 +36,8 @@ export default class Index extends Component {
                 Our Top Services
               </h2>
             </Col>
-            <Orangeservices serviceList={Service} />
-            {/* <ServiceIndex serviceList={Service} bgColor="#FF5500" /> */}
+            <Orangeservices serviceList={Service} id={4} />
+
             <Col md={12}>
               <h2
                 style={{
@@ -50,12 +49,12 @@ export default class Index extends Component {
                 Additional Coaching Services
               </h2>
             </Col>
-            <ServiceIndex collapsible serviceList={Additional} />
+            <Orangeservices serviceList={Service} id={5} />
           </Row>
         </MyContainer>
-
         <HowItWorks />
         <BrowseCareerCoaches />
+        <FindCoach />
       </Layout>
     );
   }

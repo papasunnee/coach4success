@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./index.scss";
-
 import MyContainer from "../MyContainer";
 import { Col } from "reactstrap";
 import SvgLoader from "bv-react-svgloader";
+
+import "./index.scss";
 
 const Index = () => {
   return (

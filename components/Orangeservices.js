@@ -1,11 +1,15 @@
 import React, { Fragment } from "react";
 import { NavItem, NavLink } from "reactstrap";
 
-const Orangeservices = ({ serviceList = [], bgColor = "#272727" }) => {
+const Orangeservices = ({
+  serviceList = [],
+  bgColor = "#272727",
+  id: serviceId
+}) => {
   return (
     <Fragment>
       {serviceList
-        .filter(({ id }) => id == 4)
+        .filter(({ id }) => id == serviceId)
         .map(({ key, href, label }) => (
           <div className="col-md-3">
             <div className="top-service mx-auto my-2">
@@ -13,10 +17,9 @@ const Orangeservices = ({ serviceList = [], bgColor = "#272727" }) => {
             </div>
           </div>
         ))}
-
       <style jsx>{`
         .top-service {
-          background-color: #ff5500;
+          background-color: ${serviceId == 4 ? `#ff5500` : `#000`};
           display: flex;
           justify-content: center;
           align-items: center;
