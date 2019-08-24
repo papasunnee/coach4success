@@ -3,16 +3,18 @@ import "./index.scss";
 
 import MyContainer from "../MyContainer";
 import { Col } from "reactstrap";
-import SvgLoader from "bv-react-svgloader";
 
 const Index = () => {
   return (
     <div className="footer">
       <MyContainer>
         <Col md={3}>
-          {/* <SvgLoader src="/static/svgs/footerLogo.svg" /> */}
-          <p>Footer Logo Here</p>
-          <p>Copyright 2018 Coach4Success</p>
+          <img
+            src="/static/images/logo-dark.png"
+            className="img-fluid"
+            style={{ maxWidth: "220px", marginBottom: "5px" }}
+          />
+          <p style={{ fontSize: "12px" }}>Copyright 2018 Coach4Success</p>
         </Col>
         <Col md={3}>
           <h5>ABOUT Coach4Success</h5>
