@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import "./ContactUs.scss";
 
@@ -8,61 +9,65 @@ const ContactUs = () => {
       <div className="head-contact">
         <h2>Contact Us</h2>
       </div>
-      <div className="title-contact">
-        <div className="logo-contact">
-          <div className="img-contact">
-            <img src="static/contact/logo.png" alt="image here" />
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-          </div>
-          <div className="content-contact">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="body-contact">
-        <div className="info-contact">
-          <p className="first-contact">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation
-          </p>
-          <p className="second-contact">
-            User questions, comments, or ideas, click{" "}
-            <Link>
-              <a href="#">here</a>
-            </Link>
-          </p>
-        </div>
-      </div>
-      <div className="contact-section">
-        <div className="form-contact">
-          <div className="send-contact">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email Address" />
-            {/* <input type="text" placeholder="Feedback" /> */}
-            <textarea placeholder="Feedback" cols="6" rows="4" />
-            <button type="submit">SEND</button>
-          </div>
-        </div>
-      </div>
+      <Container style={{ minHeight: "100vh" }}>
+        <Row>
+          <Col md={{ size: 6, offset: 6 }}>
+            <div className="form-wrapper my-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                facilis quod, libero, accusantium sunt ab similique atque quas
+                ipsa ex tenetur eaque laborum pariatur facere odit ratione, eius
+                corporis minima! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sequi facilis quod, libero, accusantium sunt
+                ab similique atque quas ipsa ex tenetur eaque laborum pariatur
+                facere odit ratione, eius corporis minima!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                facilis quod, libero, accusantium sunt ab similique atque quas
+                ipsa ex tenetur eaque laborum pariatur facere odit ratione, eius
+                corporis minima! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sequi facilis quod, libero, accusantium sunt
+                ab similique atque quas ipsa ex tenetur eaque laborum pariatur
+                facere odit ratione, eius corporis minima!
+              </p>
+              <form
+                className="form-horizontal my-5"
+                onSubmit={e => {
+                  e.preventDefault();
+                  alert("Contact Developer");
+                }}
+              >
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    className="form-control"
+                    placeholder="Feedback"
+                    rows="4"
+                    required
+                  />
+                </div>
+                <button className="btn btn-submit">SEND</button>
+              </form>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </Fragment>
   );
 };

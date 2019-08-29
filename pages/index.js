@@ -3,7 +3,6 @@ import { Col, Row } from "reactstrap";
 import Layout from "../components/Layout";
 import Lorem from "../components/Lorem";
 import MyContainer from "../components/MyContainer";
-import ServiceIndex from "../components/Services";
 import Service from "../components/Services/Service";
 import Orangeservices from "../components/Orangeservices";
 import HowItWorks from "../components/HowItWorks";

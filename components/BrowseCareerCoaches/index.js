@@ -15,7 +15,7 @@ const Index = () => {
             Search all of our coaches and find someone you want to work with
           </p>
           <Link href="">
-            <a>BROWSE ALL COACHES</a>
+            <a>FIND A COACH</a>
           </Link>
         </Col>
       </MyContainer>

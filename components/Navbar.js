@@ -28,7 +28,12 @@ export default () => {
         zIndex: "1000"
       }}
     >
-      <Navbar color="dark" dark expand="lg">
+      <Navbar
+        color="dark"
+        dark
+        className="justify-content-md-around"
+        expand="lg"
+      >
         <NavbarBrand href="/">
           <img
             className="img-fluid"

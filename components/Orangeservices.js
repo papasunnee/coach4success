@@ -12,24 +12,39 @@ const Orangeservices = ({
         .filter(({ id }) => id == serviceId)
         .map(({ key, href, label }) => (
           <div className="col-md-3">
-            <div className="top-service mx-auto my-2">
+            <div
+              className={`top-service mx-auto my-2 ${
+                serviceId == 4 ? `red` : `black`
+              }`}
+            >
               <div className="top-service-link">{label}</div>
             </div>
           </div>
         ))}
       <style jsx>{`
         .top-service {
-          background-color: ${serviceId == 4 ? `#ff5500` : `#000`};
           display: flex;
+          color: #000;
           justify-content: center;
           align-items: center;
           min-width: 150px;
           max-width: 300px;
           height: 150px;
           border-radius: 15px;
+          background-color: #dadada;
+        }
+        .red:hover {
+          background-color: #dc1f26;
+        }
+        .red:hover .top-service-link,
+        .black:hover .top-service-link {
+          color: #fff;
+        }
+        .black:hover {
+          background-color: #272727;
         }
         .top-service-link {
-          color: #fff;
+          color: #000;
           font-weight: 600;
           text-align: center;
         }

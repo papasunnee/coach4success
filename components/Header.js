@@ -12,6 +12,23 @@ const Header = props => {
           <h1 className="display-6">Find A Coach, Find Success</h1>
           <div className="orangeBox">
             Don’t be afraid to take a step in the right direction
+            <form
+              className="form-inline mt-3"
+              onSubmit={e => {
+                e.preventDefault();
+                alert("Contact Developer");
+              }}
+            >
+              <div className="form-group m-auto">
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  placeholder="FIND A COACH"
+                />
+                <button className="btn btn-success">search</button>
+              </div>
+            </form>
           </div>
         </div>
       </Jumbotron>

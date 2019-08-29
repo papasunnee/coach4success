@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import MyContainer from "../MyContainer";
 import { Col } from "reactstrap";
 import SvgLoader from "bv-react-svgloader";
