@@ -21,9 +21,9 @@ const services = () => {
       <style>
         {`
         .jumbotron{
-            background-image: url(/static/services/head.png);
+            background-image: url(/static/images/service.jpg);
             margin-bottom: 0;
-            min-height: 70vh;
+            min-height: 50vh;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -34,7 +34,7 @@ const services = () => {
             bottom : 0px ;
             padding: 0px 0px 20px 25px;
             font-weight: bold;
-            color: #fff;
+            color: #000;
           }
       `}
       </style>

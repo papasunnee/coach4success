@@ -1,69 +1,50 @@
 import React, { Fragment } from "react";
-import Link from "next/link";
-import { Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import ServiceHeader from "../Services/ServiceHeader";
+import ServiceNavigation from "../Services/ServiceNavigation";
 
-const CareerQA = ({ serviceList = [], bgColor = "#272727" }) => {
+const UltimateKit = () => {
   return (
     <Fragment>
-      <div className="head-services">
-        <h2>Our Services</h2>
-      </div>
-      <div className="title-services">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </p>
-      </div>
-      <div className="content-service">
-        <Nav className="service-links" navbar>
-          <div className="cow">
-            {serviceList.map(({ key, href, label }) => (
-              <NavItem key={key}>
-                <Link href={href} >
-                  <NavLink href={href}>
-                    <div className="label-service">{label}</div>
-                  </NavLink>
-                </Link>
-              </NavItem>
-            ))}
-          </div>
-        </Nav>
-
-        <div className="about-service">
-          <h4>30-minutes Career Q&A</h4>
-          <img src="static/services/qa.png" alt="image here" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
+      <ServiceHeader headerBg="resume" title={`30 Minutes Career Q&A`} />
+      <Container fluid className="py-5 pl-5 m-0">
+        <Row>
+          <Col md={8} className="px-5">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
+              voluptatibus non atque eius harum, itaque, veniam culpa officiis
+              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
+              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
+              delectus aperiam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
+              voluptatibus non atque eius harum, itaque, veniam culpa officiis
+              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
+              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
+              delectus aperiam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
+              voluptatibus non atque eius harum, itaque, veniam culpa officiis
+              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
+              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
+              delectus aperiam!
+            </p>
+          </Col>
+          <Col md={4} className="p-0">
+            <ServiceNavigation />
+          </Col>
+        </Row>
+      </Container>
     </Fragment>
   );
 };
 
-export default CareerQA;
+export default UltimateKit;

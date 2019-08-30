@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { NavItem, NavLink } from "reactstrap";
+import Link from "next/link";
 
 const Orangeservices = ({
   serviceList = [],
@@ -12,13 +12,15 @@ const Orangeservices = ({
         .filter(({ id }) => id == serviceId)
         .map(({ key, href, label }) => (
           <div className="col-md-3">
-            <div
-              className={`top-service mx-auto my-2 ${
-                serviceId == 4 ? `red` : `black`
-              }`}
-            >
-              <div className="top-service-link">{label}</div>
-            </div>
+            <Link href={`service/${href}`}>
+              <a
+                className={`top-service mx-auto my-2 ${
+                  serviceId == 4 ? `red` : `black`
+                }`}
+              >
+                <div className="top-service-link">{label}</div>
+              </a>
+            </Link>
           </div>
         ))}
       <style jsx>{`
@@ -32,6 +34,7 @@ const Orangeservices = ({
           height: 150px;
           border-radius: 15px;
           background-color: #dadada;
+          text-decoration: none;
         }
         .red:hover {
           background-color: #dc1f26;

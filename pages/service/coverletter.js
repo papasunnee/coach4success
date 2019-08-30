@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import Coverletter from "../components/Coverletter/Coverletter";
-import Service from "../components/Services/Service";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer/index";
+import Coverletter from "../../components/Coverletter/Coverletter";
+import Service from "../../components/Services/Service";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer/index";
 
 const coverletter = () => {
   return (
