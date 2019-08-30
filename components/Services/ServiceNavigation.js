@@ -4,7 +4,6 @@ import ServiceList from "../Services/Service";
 import "./ServiceNavigation.scss";
 
 const ServiceNavigation = props => {
-  let servicePathname = "pp";
   return (
     <div className="navigationMenu">
       <ul className="navigationList">
