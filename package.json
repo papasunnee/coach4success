@@ -1,14 +1,14 @@
 {
-  "name": "newhaven",
+  "name": "coach4success",
   "version": "1.0.0",
-  "description": "new haven estate application",
+  "description": "coach for success",
   "main": "index.js",
   "repository": "https://github.com/papasunnee/newhaven.git",
   "author": "Adetona Sunday <papasunnee@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next src -p 7272",
+    "dev": "next src -p 3000",
     "build": "next build src ",
     "preexport": "npm run build",
     "export": "next export src -o ./out",

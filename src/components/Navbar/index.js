@@ -16,7 +16,7 @@ export default props => {
   };
 
   return (
-    <Navbar color="light" light expand="md">
+    <Navbar color="dark" dark expand="md">
       <div className="container-fluid">
         <Link href="/">
           <a className="navbar-brand">Company Brand</a>
