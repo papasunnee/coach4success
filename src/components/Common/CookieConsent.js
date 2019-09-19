@@ -4,10 +4,10 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 export default () => {
   return (
     <CookieConsent
-      location="top"
+      location="bottom"
       buttonText="I Accept"
-      cookieName="newHaven"
-      enableDeclineButton="true"
+      cookieName="coach4success"
+      // enableDeclineButton="true"
       declineButtonText="Close"
       declineButtonStyle={{
         background: "#c12a2a",
@@ -21,18 +21,19 @@ export default () => {
         margin: "15px"
       }}
       style={{
-        background: "#B2E7FA",
-        position: "sticky",
-        color: "#000"
+        background: "#231F20",
+        color: "#fff",
+        marginBottom: "0px",
+        padding: "0px !important",
+        display: "grid",
+        gridTemplateColumns: "auto auto"
       }}
       buttonStyle={{
-        color: "#4e503b",
+        color: "#fff",
         fontSize: "13px",
-        background: "#ffd42d",
-        border: "0",
+        background: "#146CB6",
         borderRadius: "0px",
         boxShadow: "none",
-        color: "black",
         cursor: "pointer",
         flex: "0 0 auto",
         padding: "5px 10px",

@@ -46,7 +46,7 @@ class MyApp extends App {
           <ApolloProvider client={apolloClient}>
             <CookieConsent />
             <Component {...pageProps} />
-            <Tawkto />
+            {/* <Tawkto /> */}
           </ApolloProvider>
         </ThemeProvider>
       </Fragment>

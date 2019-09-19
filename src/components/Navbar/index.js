@@ -16,10 +16,12 @@ export default props => {
   };
 
   return (
-    <Navbar color="dark" dark expand="md">
+    <Navbar dark expand="md">
       <div className="container-fluid">
         <Link href="/">
-          <a className="navbar-brand">Company Brand</a>
+          <a className="navbar-brand" title="Coach4Success">
+            <img className="img-fluid" src="/static/images/logo.png" />
+          </a>
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={state.isOpen} navbar>
