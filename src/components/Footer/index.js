@@ -60,7 +60,7 @@ export default () => {
         </div>
         <hr className="my-4" />
         <p className="copyright">
-          Copyright &copy; 2019. Companys Name. All Rights Reserved.
+          Copyright &copy; 2019. Coach4Success. All Rights Reserved.
         </p>
       </div>
     </footer>
