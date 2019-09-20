@@ -1,0 +1,22 @@
+.contactForm {
+  background-color: #f8f8f8;
+  .form {
+    .form-control {
+      box-shadow: none;
+      resize: none;
+      font-size: 12px;
+    }
+    ::placeholder {
+      font-size: 12px;
+    }
+    .submitButton {
+      border: none;
+      background-color: #dc1f26;
+      font-size: 12px;
+      color: #fff;
+      padding: 5px 30px;
+      border-radius: 20px;
+      float: right;
+    }
+  }
+}

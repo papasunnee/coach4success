@@ -1,0 +1,48 @@
+.howItWorks {
+  background: #f8f8f8;
+
+  h3 {
+    font-weight: 700;
+  }
+  .stepBox {
+    background-color: #fff;
+    padding: 15px;
+    font-size: 12px;
+    &:hover {
+      box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.75);
+      .title {
+        background-color: #c2c2c2;
+      }
+    }
+    .title {
+      background-color: #f2f2f2;
+      text-align: center;
+      color: #146cb6;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: Nunito, sans-serif;
+    }
+    .image {
+      text-align: center;
+      img {
+        max-width: 50px;
+        margin: 30px auto;
+      }
+    }
+    h6 {
+      text-align: center;
+      font-weight: 700;
+    }
+    .description {
+      text-align: center;
+    }
+  }
+  .moreQuestion {
+    font-weight: 600;
+    font-size: 12px;
+    span {
+      color: #146cb6;
+    }
+  }
+}

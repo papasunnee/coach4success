@@ -1,31 +1,16 @@
 import Link from "next/link";
 import NewsLetter from "./NewsLetter";
-import { Phone, Email } from "../Common/ContactInfo";
 import "./index.scss";
 
 export default () => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="container">
         <div className="row gutters">
           <div className="col-md-3">
-            <div className="first">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore
-              </p>
-              <p>
-                <Phone />
-              </p>
-              <p>
-                <Email />
-              </p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <h6 className="title">Navigate</h6>
+            <h6 className="title">ABOUT Coach4Success</h6>
             <ul className="link">
-              {NavigateLinks.map((link, key) => {
+              {AboutCoach.map((link, key) => {
                 return (
                   <li key={key}>
                     <Link href={link.href}>
@@ -36,23 +21,41 @@ export default () => {
               })}
             </ul>
           </div>
-          <div className="col-md-3">
-            <h6 className="title">Schemes</h6>
+          <div className="col-md-2">
+            <h6 className="title">SERVICES</h6>
             <ul className="link">
-              {SchemesLinks.map(({ label, href }, key) => {
-                return (
-                  <li key={key}>
-                    <Link href={href}>
-                      <a>{label}</a>
-                    </Link>
-                  </li>
-                );
-              })}
+              {ServicesLinks.filter(service => service.row == 1).map(
+                (link, key) => {
+                  return (
+                    <li key={key}>
+                      <Link href={link.href}>
+                        <a>{link.label}</a>
+                      </Link>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           </div>
           <div className="col-md-3">
-            <h6 className="title">Newsletter</h6>
-            <NewsLetter />
+            <ul className="link">
+              <br />
+              {ServicesLinks.filter(service => service.row == 2).map(
+                ({ label, href }, key) => {
+                  return (
+                    <li key={key}>
+                      <Link href={href}>
+                        <a>{label}</a>
+                      </Link>
+                    </li>
+                  );
+                }
+              )}
+            </ul>
+          </div>
+          <div className="col-md-3">
+            {/* <h6 className="title">Newsletter</h6>
+            <NewsLetter /> */}
           </div>
         </div>
         <hr className="my-4" />
@@ -64,14 +67,39 @@ export default () => {
   );
 };
 
-const NavigateLinks = [
-  { label: "Home", href: "/" },
+const AboutCoach = [
   { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" }
+  { label: "Team", href: "/team" },
+  { label: "Careers", href: "/careers" },
+  { label: "Latest News", href: "/latest-news" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" }
 ];
 
-const SchemesLinks = [
-  { label: "Link 1", href: "" },
-  { label: "Link 2", href: "" },
-  { label: "Link 3", href: "" }
+export const ServicesLinks = [
+  { label: "Interview Coaching", href: "/interview-coaching", row: "1" },
+  { label: "Resume Review", href: "/resume-review", row: "1" },
+  { label: "30-Minutes Career Q&A", href: "/career-questions", row: "1" },
+  { label: "Job Search Strategy", href: "/job-search-strategy", row: "1" },
+  { label: "Cover Letter Writing", href: "/cover-letter-writing", row: "1" },
+  { label: "Network Strategy", href: "/network-strategy", row: "1" },
+  { label: "Career Transition", href: "/career-transition", row: "1" },
+  {
+    label: "Resume+LinkedIn Review",
+    href: "/resume-linkedin-review",
+    row: "2"
+  },
+  {
+    label: "New Entrepreneur Coaching",
+    href: "/new-entrepreneur-coaching",
+    row: "2"
+  },
+  { label: "Career Choice", href: "/career-choice", row: "2" }
+];
+
+const ServicesLinks2 = [
+  { label: "Resume+LinkedIn Review", href: "/resume-linkedin-review" },
+  { label: "New Entrepreneur Coaching", href: "/new-entrepreneur-coaching" },
+  { label: "Career Choice", href: "/career-choice" }
 ];

@@ -19,14 +19,21 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+            href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800,900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Nunito:400,800,900&display=swap"
             rel="stylesheet"
           />
           <style>
             {`
               * {
-                font-family: 'Open Sans', sans-serif;
+                font-family: Montserrat, sans-serif;
                 box-sizing : border-box ;
+              }
+              h1,h2,h3,h4,h5,h6{
+                font-family: Nunito, sans-serif;
               }
               a{
                 text-decoration : none ;

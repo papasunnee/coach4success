@@ -1,8 +1,21 @@
-footer {
-  background: #fff;
+.footer {
+  background-image: url(/static/images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 4rem;
   padding-bottom: 1rem;
+  position: relative;
+  &::after {
+    content: url(/static/images/logo-dark.png);
+    position: absolute;
+    bottom: 70px;
+    width: 300px;
+    height: 50px;
+    right: 0;
+  }
   .title {
+    color: #dc1f26;
     font-weight: 700;
   }
   .link {
@@ -14,11 +27,11 @@ footer {
       padding: 0;
       list-style: none;
       a {
-        color: #2a333c;
+        color: #fff;
         text-decoration: none;
         font-size: 13px;
         &:hover {
-          color: #4b4f53;
+          color: rgb(221, 221, 221);
         }
       }
     }
@@ -42,6 +55,7 @@ footer {
       .email-field {
         box-shadow: none;
         border-radius: 0;
+        background-color: transparent;
         outline: none;
         border-top: none;
         border-left: none;

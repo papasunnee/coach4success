@@ -4,8 +4,12 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 export default () => {
   return (
     <CookieConsent
+      contentStyle={{
+        margin: "0",
+        padding: "10px"
+      }}
       location="bottom"
-      buttonText="I Accept"
+      buttonText="I ACCEPT"
       cookieName="coach4success"
       // enableDeclineButton="true"
       declineButtonText="Close"
@@ -23,21 +27,21 @@ export default () => {
       style={{
         background: "#231F20",
         color: "#fff",
-        marginBottom: "0px",
         padding: "0px !important",
         display: "grid",
         gridTemplateColumns: "auto auto"
       }}
       buttonStyle={{
         color: "#fff",
-        fontSize: "13px",
+        fontSize: "16px",
+        fontWeight: "700",
         background: "#146CB6",
         borderRadius: "0px",
         boxShadow: "none",
         cursor: "pointer",
         flex: "0 0 auto",
-        padding: "5px 10px",
-        margin: "15px"
+        padding: "20px 40px",
+        margin: "0"
       }}
       expires={150}
     >

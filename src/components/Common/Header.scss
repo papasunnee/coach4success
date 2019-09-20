@@ -1,0 +1,26 @@
+.serviceHeader {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h2 {
+    // position: absolute;
+    text-transform: uppercase;
+    bottom: 0px;
+    padding: 0px 0px 20px 25px;
+    font-weight: bold;
+    &.light {
+      color: #fff;
+    }
+    &.dark {
+      color: #000;
+    }
+    span {
+      color: #dc1f26;
+    }
+  }
+}
