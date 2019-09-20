@@ -3,7 +3,7 @@ import { Paragraph } from "./TextComponent";
 
 const NewsPage = () => {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-md-12 mb-4">
           <h3 style={{ fontWeight: 700 }}>ALTITUDE TECHNOLOGY WORLDWIDE</h3>
