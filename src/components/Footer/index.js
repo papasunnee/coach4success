@@ -83,7 +83,7 @@ export const ServicesLinks = [
   { label: "30-Minutes Career Q&A", href: "/career-questions", row: "1" },
   { label: "Job Search Strategy", href: "/job-search-strategy", row: "1" },
   { label: "Cover Letter Writing", href: "/cover-letter-writing", row: "1" },
-  { label: "Network Strategy", href: "/network-strategy", row: "1" },
+  { label: "Networking Strategy", href: "/networking-strategy", row: "1" },
   { label: "Career Transition", href: "/career-transition", row: "1" },
   {
     label: "Resume+LinkedIn Review",

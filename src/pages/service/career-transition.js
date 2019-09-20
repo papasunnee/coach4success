@@ -8,8 +8,8 @@ const ResumeReview = () => {
   return (
     <Fragment>
       <Header
-        headerBg="career-questions"
-        title="30 Minutes Career Q&A"
+        headerBg="career-transition"
+        title="Career Transition"
         page="Service"
         service
       />
