@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 0;
   h2 {
     // position: absolute;
     text-transform: uppercase;
@@ -21,6 +22,7 @@
     }
     span {
       color: #dc1f26;
+      font-family: Nunito, "sans-serif";
     }
   }
 }

@@ -25,11 +25,11 @@ export default () => {
             <h6 className="title">SERVICES</h6>
             <ul className="link">
               {ServicesLinks.filter(service => service.row == 1).map(
-                (link, key) => {
+                ({ href, label }, key) => {
                   return (
                     <li key={key}>
-                      <Link href={link.href}>
-                        <a>{link.label}</a>
+                      <Link href={`/service${href}`}>
+                        <a>{label}</a>
                       </Link>
                     </li>
                   );
@@ -44,7 +44,7 @@ export default () => {
                 ({ label, href }, key) => {
                   return (
                     <li key={key}>
-                      <Link href={href}>
+                      <Link href={`/service${href}`}>
                         <a>{label}</a>
                       </Link>
                     </li>

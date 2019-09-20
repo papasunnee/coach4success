@@ -1,0 +1,32 @@
+.navigationMenu {
+  background-color: #f2f2f2;
+  padding: 20px;
+  .navigationList {
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    h4 {
+      font-weight: 600;
+    }
+    .navigationItem {
+      .navigationLink {
+        padding: 10px;
+        display: block;
+        background-color: #dadada;
+        border: 1px solid #dadada;
+        border-radius: 7px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        &:hover {
+          background-color: #dc1f26;
+        }
+        .active {
+          background-color: #dc1f26 !important;
+        }
+      }
+    }
+  }
+}
