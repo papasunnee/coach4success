@@ -6,7 +6,7 @@ const Policy = () => {
   return (
     <section className="policy">
       <div className="container">
-        <div className="row py-5">
+        <div className="row py-5 mt-5">
           <div className="col-md-12">
             <h3>PRIVACY POLICY</h3>
           </div>

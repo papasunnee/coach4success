@@ -2,14 +2,13 @@ import React, { Fragment } from "react";
 import withLayout from "../hocs/withLayout";
 import Header from "../components/Common/Header";
 import Info from "../components/Contact/Info";
-import ContactForm from "../components/Contact/ContactForm";
+import Faq from "../components/Faq";
 
 const FAQs = () => {
   return (
     <Fragment>
-      <Header page="Contact" headerBg="contact" />
-      <Info />
-      <ContactForm />
+      <Header page="FAQs" headerBg="contact" />
+      <Faq />
     </Fragment>
   );
 };

@@ -21,12 +21,9 @@ export const FixedNav = () => (
         }}
       >
         <div className="navbar-header">
-          <Link href="/" prefetch>
-            <a href="/" className="navbar-brand">
-              <img
-                src="/static/images/logo.png"
-                // style={{ maxWidth: "100px" }}
-              />
+          <Link href="/">
+            <a className="navbar-brand">
+              <img src="/static/images/logo.png" />
             </a>
           </Link>
         </div>
@@ -43,13 +40,4 @@ export const FixedNav = () => (
     </div>
     <div className="clearfix" />
   </Fragment>
-);
-
-export const PageTitle = props => (
-  <div
-    className="container-fluid p-4"
-    style={{ backgroundColor: "#0069D2", marginTop: "82px" }}
-  >
-    <h3 className="px-5 text-light">{props.label} </h3>
-  </div>
 );
