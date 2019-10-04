@@ -14,6 +14,11 @@ const Tawkto = dynamic(() => import("../components/Common/Tawkto"), {
   loading: () => <p style={{ display: "none" }} />
 });
 
+const Addthis = dynamic(() => import("../components/Common/AddThis"), {
+  ssr: false,
+  loading: () => <p style={{ display: "none" }} />
+});
+
 Router.events.on("routeChangeStart", url => {
   console.log(`Loading: ${url}`);
   NProgress.start();
@@ -45,6 +50,7 @@ class MyApp extends App {
         <ThemeProvider theme={theme}>
           <ApolloProvider client={apolloClient}>
             <CookieConsent />
+            <Addthis />
             <Component {...pageProps} />
             {/* <Tawkto /> */}
           </ApolloProvider>
