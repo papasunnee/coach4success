@@ -8,7 +8,7 @@ const Policy = () => {
       <div className="container">
         <div className="row py-5">
           <div className="col-md-12">
-            <h3>TERMS OF USE</h3>
+            <h3>PRIVACY POLICY</h3>
           </div>
         </div>
         <div className="row">

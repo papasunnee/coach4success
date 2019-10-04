@@ -69,12 +69,12 @@ export default () => {
 
 const AboutCoach = [
   { label: "About Us", href: "/about" },
-  { label: "Team", href: "/team" },
-  { label: "Careers", href: "/careers" },
-  { label: "Latest News", href: "/latest-news" },
+  { label: "Insight", href: "/latest-news" },
   { label: "FAQs", href: "/faqs" },
   { label: "Contact Us", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" }
+  // { label: "Team", href: "/team" },
+  // { label: "Careers", href: "/careers" },
 ];
 
 export const ServicesLinks = [

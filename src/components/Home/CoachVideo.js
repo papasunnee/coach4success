@@ -12,8 +12,9 @@ const CoachVideo = () => {
             <h3 className="my-2 text-center">Find A Coach, Find Success</h3>
             <div className="videoWrapper">
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-                playing
+                // url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                url="https://youtu.be/_Nthth5Vrp4"
+                playing={false}
                 width="100%"
               />
             </div>

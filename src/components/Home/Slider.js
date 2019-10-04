@@ -7,12 +7,12 @@ const carouselContent = [
   {
     heading: "Find A Coach, Find Success",
     subtitle: "",
-    bgColor: "tomato",
+    bgColor: "#e5e5e5",
     bgImage: "1"
   },
-  { heading: "", subtitle: "", bgColor: "orchid", bgImage: "2" },
-  { heading: "", subtitle: "", bgColor: "orange", bgImage: "3" },
-  { heading: "", subtitle: "", bgColor: "seaBlue", bgImage: "4" }
+  { heading: "", subtitle: "", bgColor: "#e5e5e5", bgImage: "2" },
+  { heading: "", subtitle: "", bgColor: "#e5e5e5", bgImage: "3" },
+  { heading: "", subtitle: "", bgColor: "#e5e5e5", bgImage: "4" }
 ];
 
 export default () => {
