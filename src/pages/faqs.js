@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import withLayout from "../hocs/withLayout";
 import Header from "../components/Common/Header";
-import Info from "../components/Contact/Info";
 import Faq from "../components/Faq";
 
 const FAQs = () => {

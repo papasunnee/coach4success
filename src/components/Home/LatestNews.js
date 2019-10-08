@@ -9,7 +9,7 @@ const LatestNews = ({ filter = false }) => {
         {filter && (
           <div className="row">
             <div className="col-md-12">
-              <h3>Latest News</h3>
+              <h3 className="my-3">Insight</h3>
             </div>
           </div>
         )}
