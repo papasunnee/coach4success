@@ -6,7 +6,7 @@ import NewsPage from "../components/Common/NewsPage";
 const LatestNewsPage = () => {
   return (
     <Fragment>
-      <Header page="Latest News" headerBg="latestNews" />
+      <Header page="Insight" headerBg="latestNews" />
       <NewsPage />
     </Fragment>
   );
