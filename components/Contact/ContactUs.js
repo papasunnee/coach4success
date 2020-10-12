@@ -13,27 +13,13 @@ const ContactUs = () => {
         <Row>
           <Col md={{ size: 6, offset: 6 }}>
             <div className="form-wrapper my-5">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                facilis quod, libero, accusantium sunt ab similique atque quas
-                ipsa ex tenetur eaque laborum pariatur facere odit ratione, eius
-                corporis minima! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi facilis quod, libero, accusantium sunt
-                ab similique atque quas ipsa ex tenetur eaque laborum pariatur
-                facere odit ratione, eius corporis minima!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                facilis quod, libero, accusantium sunt ab similique atque quas
-                ipsa ex tenetur eaque laborum pariatur facere odit ratione, eius
-                corporis minima! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Sequi facilis quod, libero, accusantium sunt
-                ab similique atque quas ipsa ex tenetur eaque laborum pariatur
-                facere odit ratione, eius corporis minima!
-              </p>
+              <h3>
+                Talk to us today, so we can help you transform all your career
+                dreams realities.
+              </h3>
               <form
                 className="form-horizontal my-5"
-                onSubmit={e => {
+                onSubmit={(e) => {
                   e.preventDefault();
                   alert("Contact Developer");
                 }}

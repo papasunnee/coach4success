@@ -11,31 +11,25 @@ const UltimateKit = () => {
         <Row>
           <Col md={8} className="px-5">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
+              One of the best feelings is getting someone to answer your
+              questions as soon as they come up especially when it’s an expert
+              giving you the desired answers, we got you covered with our
+              30-minute career Q&A services. This service is a 30-minute talk
+              session that offers you the opportunity to have a chat with our
+              consultant who is always available to answer all your question in
+              regard to career, job search, interviews, resumes, or LinkedIn
+              challenges and what you need to excel in the desired field.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
+              Our consultants are professionals in career planning, resume
+              writing, building LinkedIn profiles, job search, and,
+              interviewing. Our vast knowledge of the recruitment process and
+              extensive connection, keep us updated on current recruits making
+              us the right team to answer all your career-related questions. A
+              30-minutes session using voice calls, video calls, or even
+              physical sessions, can help you overcome career confusion, give
+              you immediate feedback on all your questions, a possible way out
+              and, a follow-up action plan drafted by our consultant.
             </p>
           </Col>
           <Col md={4} className="p-0">

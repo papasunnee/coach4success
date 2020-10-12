@@ -14,31 +14,25 @@ const UltimateKit = () => {
         <Row>
           <Col md={8} className="px-5">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
+              There are a lot of people who have the same qualification as you
+              in your field and are searching for the same opportunity as you
+              are, what makes you stand out in your resume and profile.
+              Sometimes writing about yourself can be difficult and you need a
+              professional to help you present your details in the simplest and
+              catchy manner. Most recruiters have used LinkedIn to search for
+              employees and it is important your profile outshine others. Our
+              review service helps you get a full resume and LinkedIn profile
+              review that will make you ahead of others, establish a connection
+              between you and your profile, show your details in a brief catchy
+              way, present your values to recruiters, and makes your profile
+              attractive, informative and has long long-lasting impacts on
+              recruiters
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              mollitia doloribus rem placeat quo vero quasi nam ipsum magni,
-              voluptatibus non atque eius harum, itaque, veniam culpa officiis
-              autem modi? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ab maiores quidem tenetur perspiciatis aut hic cum sunt enim
-              facilis. Ipsam voluptates facere vero, eaque a fugit amet unde
-              delectus aperiam!
+              With an idea of what recruiters are looking for, we work on your
+              skills, talents, experiences, and achievements in your resume and
+              LinkedIn profile in order to increase your visibility and chances
+              of getting your desired job.
             </p>
           </Col>
           <Col md={4} className="p-0">
