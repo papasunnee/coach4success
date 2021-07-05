@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   div.main {
     text-align: center;
     color: #fff;
@@ -19,5 +20,41 @@
       border-radius: 50px;
       width: 50%;
     }
+  }
+}
+
+.video_wrapper {
+  position: relative;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+#myVideo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  // z-index: 9999;
+}
+div.main {
+  text-align: center;
+  color: #fff;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  .orangeBox {
+    margin: auto;
+    padding: 5px 40px;
+    border-radius: 50px;
+    width: 50%;
   }
 }
