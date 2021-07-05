@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "preexport": "npm run build",
-    "export": "next export src -o ./out",
+    "export": "next export -o ./out",
     "start-win": "next start",
     "heroku-postbuild": "next build"
   },
