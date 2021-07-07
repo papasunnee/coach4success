@@ -24,7 +24,7 @@ export default () => {
           <div className="col-md-2">
             <h6 className="title">SERVICES</h6>
             <ul className="link">
-              {ServicesLinks.filter(service => service.row == 1).map(
+              {ServicesLinks.filter((service) => service.row == 1).map(
                 ({ href, label }, key) => {
                   return (
                     <li key={key}>
@@ -40,7 +40,7 @@ export default () => {
           <div className="col-md-3">
             <ul className="link">
               <br />
-              {ServicesLinks.filter(service => service.row == 2).map(
+              {ServicesLinks.filter((service) => service.row == 2).map(
                 ({ label, href }, key) => {
                   return (
                     <li key={key}>
@@ -60,7 +60,7 @@ export default () => {
         </div>
         <hr className="my-4" />
         <p className="copyright">
-          Copyright &copy; 2019. Coach4Success. All Rights Reserved.
+          Copyright &copy; 2021. Coach4Success. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -72,7 +72,7 @@ const AboutCoach = [
   { label: "Insight", href: "/latest-news" },
   { label: "FAQs", href: "/faqs" },
   { label: "Contact Us", href: "/contact" },
-  { label: "Privacy Policy", href: "/privacy-policy" }
+  { label: "Privacy Policy", href: "/privacy-policy" },
   // { label: "Team", href: "/team" },
   // { label: "Careers", href: "/careers" },
 ];
@@ -88,18 +88,18 @@ export const ServicesLinks = [
   {
     label: "Resume+LinkedIn Review",
     href: "/resume-linkedin-review",
-    row: "2"
+    row: "2",
   },
   {
     label: "New Entrepreneur Coaching",
     href: "/new-entrepreneur-coaching",
-    row: "2"
+    row: "2",
   },
-  { label: "Career Choice", href: "/career-choice", row: "2" }
+  { label: "Career Choice", href: "/career-choice", row: "2" },
 ];
 
 const ServicesLinks2 = [
   { label: "Resume+LinkedIn Review", href: "/resume-linkedin-review" },
   { label: "New Entrepreneur Coaching", href: "/new-entrepreneur-coaching" },
-  { label: "Career Choice", href: "/career-choice" }
+  { label: "Career Choice", href: "/career-choice" },
 ];
